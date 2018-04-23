@@ -1,7 +1,7 @@
 # Dracula for WordPress
 > A dark theme for [WordPress](https://wordpress.org/).
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/sublime.png)
+![Screenshot](https://github.com/oguhpereira/Dracula-WordPress/blob/master/WordPress.png?raw=true)
 
 ## Install
 
