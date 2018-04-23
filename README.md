@@ -5,7 +5,7 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/WordPress](https://draculatheme.com/WordPress).
+All instructions can be found at [draculatheme.com/WordPress](https://github.com/oguhpereira/Dracula-WordPress/issues/2).
 
 ## Team
 
