@@ -1,4 +1,4 @@
-# Dracula-WordPress
+# Dracula for WordPress
 > A dark theme for [WordPress](https://wordpress.org/).
 
 ![Screenshot](https://draculatheme.com/assets/img/screenshots/sublime.png)
