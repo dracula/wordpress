@@ -1,3 +1,6 @@
+> **WARNING**: Archived because of
+> [oguhpereira/Dracula-WordPress#4](https://github.com/oguhpereira/Dracula-WordPress/issues/4).
+
 # Dracula for WordPress
 > A dark theme for [WordPress](https://wordpress.org/).
 
