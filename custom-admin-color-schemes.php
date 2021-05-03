@@ -3,7 +3,7 @@
 Plugin Name: Dracula Custom theme Wordpress
 Description: Custom color schemes for the admin area.
 Version: 1.0
-Author: Dave Warfel, Gustavo Pereira
+Author: Dave Warfel, Gustavo Pereira, Josh Jones
 Text Domain: admin_schemes
 Domain Path: /languages
 */
@@ -11,7 +11,7 @@ Domain Path: /languages
 class Custom_Color_Schemes {
 
 
-	private $colors = array( 
+	private $colors = array(
 		'smackdown'
 	);
 
@@ -26,8 +26,8 @@ class Custom_Color_Schemes {
 	function add_colors() {
 		$suffix = is_rtl() ? '-rtl' : '';
 
-		wp_admin_css_color( 
-			'smackdown', __( 'Dracula', 'admin_schemes' ), 
+		wp_admin_css_color(
+			'smackdown', __( 'Dracula', 'admin_schemes' ),
 			plugins_url( "smackdown/colors$suffix.css", __FILE__ ),
 			array( '#282a36', '#44475a', '#8be9fd', '#f8f8f2' ),
 			array( 'base' => '#3299bb', 'focus' => '#452b72', 'current' => '#f5f5f5' )
@@ -37,9 +37,9 @@ class Custom_Color_Schemes {
 
 	/**
 	 * Make sure core's default `colors.css` gets enqueued, since we can't
-	 * @import it from a plugin stylesheet. Also force-load the default colors 
+	 * @import it from a plugin stylesheet. Also force-load the default colors
 	 * on the profile screens, so the JS preview isn't broken-looking.
-	 */ 
+	 */
 	function load_default_css() {
 
 		global $wp_styles, $_wp_admin_css_colors;
