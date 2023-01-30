@@ -1,21 +1,15 @@
 <?php
-/**
-Plugin Name: Dracula Custom theme Wordpress
-Description: Custom color schemes for the admin area.
-Version: 1.0
-Author: Dave Warfel, Gustavo Pereira
-Text Domain: admin_schemes
-Domain Path: /languages
-*/
-
 class Custom_Color_Schemes {
-
-
+	/**
+	 * Our color scheme reference name
+	 *
+	 * @var array
+	 */
 	private $colors = array( 
 		'smackdown'
 	);
 
-	function __construct() {
+	public function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css' ) );
 		add_action( 'admin_init' , array( $this, 'add_colors' ) );
 	}
@@ -23,12 +17,12 @@ class Custom_Color_Schemes {
 	/**
 	 * Register color schemes.
 	 */
-	function add_colors() {
+	public function add_colors() {
 		$suffix = is_rtl() ? '-rtl' : '';
 
 		wp_admin_css_color( 
 			'smackdown', __( 'Dracula', 'admin_schemes' ), 
-			plugins_url( "smackdown/colors$suffix.css", __FILE__ ),
+			plugins_url( 'smackdown/colors' . $suffix . '.css', __FILE__ ),
 			array( '#282a36', '#44475a', '#8be9fd', '#f8f8f2' ),
 			array( 'base' => '#3299bb', 'focus' => '#452b72', 'current' => '#f5f5f5' )
 		);
@@ -40,9 +34,8 @@ class Custom_Color_Schemes {
 	 * @import it from a plugin stylesheet. Also force-load the default colors 
 	 * on the profile screens, so the JS preview isn't broken-looking.
 	 */ 
-	function load_default_css() {
-
-		global $wp_styles, $_wp_admin_css_colors;
+	public function load_default_css() {
+		global $wp_styles;
 
 		$color_scheme = get_user_option( 'admin_color' );
 
@@ -54,5 +47,3 @@ class Custom_Color_Schemes {
 	}
 
 }
-global $acs_colors;
-$acs_colors = new Custom_Color_Schemes;
