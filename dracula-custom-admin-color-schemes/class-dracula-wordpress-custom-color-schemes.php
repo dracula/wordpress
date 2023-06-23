@@ -38,6 +38,8 @@ class Dracula_WordPress_Custom_Color_Schemes
 	 */
 	public function add_colors()
 	{
+
+
 		$suffix = is_rtl() ? '-rtl' : '';
 
 		wp_admin_css_color(

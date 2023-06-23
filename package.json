@@ -4,7 +4,7 @@
   "description": "> A dark theme for [WordPress](https://wordpress.org/).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "echo no test specified",
     "prepare": "husky install"
   },
   "author": "",
@@ -13,6 +13,9 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "**/*.php": "php .vendor/bin/phpcbf --extensions=php --standard=WordPress"
   },
   "devDependencies": {
     "husky": "^8.0.0",
