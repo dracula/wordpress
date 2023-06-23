@@ -1,0 +1,19 @@
+{
+  "name": "dracula-wordpress",
+  "version": "1.0.0",
+  "description": "> A dark theme for [WordPress](https://wordpress.org/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "composer lint && composer lint-fix"
+    }
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
