@@ -16,11 +16,6 @@ class Dracula_WordPress_Custom_Color_Schemes
 
 
 
-
-
-
-
-
 	/**
 	 * Our color scheme reference name
 	 *
