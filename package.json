@@ -15,7 +15,10 @@
     }
   },
   "lint-staged": {
-    "**/*.php": "php .vendor/bin/phpcbf --extensions=php --standard=WordPress"
+    "resources/**/*.{css,js}": [
+      "prettier --write"
+    ],
+    "**/*.php": "composer cs:fix-filtered --standard=WordPress"
   },
   "devDependencies": {
     "husky": "^8.0.0",
