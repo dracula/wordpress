@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b19a0037834c068cd9b9016d5c5ab2da",
-    "packages": [],
+    "content-hash": "80d293e64816e4d8d01875fe69e5687b",
+    "packages": [
+        {
+            "name": "nelson6e65/code-sniffer-helpers",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nelson6e65/php-code-sniffer-helpers.git",
+                "reference": "c177c9eee01c808fe81344d81daea2fa38febd68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nelson6e65/php-code-sniffer-helpers/zipball/c177c9eee01c808fe81344d81daea2fa38febd68",
+                "reference": "c177c9eee01c808fe81344d81daea2fa38febd68",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "phpstan/phpstan": "^0.12.81",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NelsonMartell\\PhpCodeSniffer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelson Martell",
+                    "email": "nelson6e65@gmail.com"
+                }
+            ],
+            "description": "Helpers for PHP Code Sniffer",
+            "support": {
+                "issues": "https://github.com/nelson6e65/php-code-sniffer-helpers/issues",
+                "source": "https://github.com/nelson6e65/php-code-sniffer-helpers/tree/v1.0.0"
+            },
+            "time": "2021-03-14T23:16:58+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",

@@ -14,7 +14,13 @@
     }
   },
   "scripts": {
-    "lint": "vendor/bin/phpcs --extensions=php --standard=WordPress dracula-wordpress.php ./dracula-custom-admin-color-schemes/class-dracula-wordpress-custom-color-schemes.php",
-    "lint-fix": "vendor/bin/phpcbf --extensions=php --standard=WordPress dracula-wordpress.php ./dracula-custom-admin-color-schemes/class-dracula-wordpress-custom-color-schemes.php "
+    "lint": "vendor/bin/phpcs **/*.php",
+    "lint-fix": "vendor/bin/phpcbf **/*.php",
+    "cs:fix-filtered": [
+      "NelsonMartell\\PhpCodeSniffer\\ComposerScripts::phpcbf"
+    ]
+  },
+  "require": {
+    "nelson6e65/code-sniffer-helpers": "^1.0"
   }
 }
