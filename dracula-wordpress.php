@@ -16,14 +16,14 @@
  * Requires PHP:      7.2
  * Author:            Dave Warfel, Gustavo Pereira, Rodrigo Del Bem
  * Author URI:        https://github.com/dracula/wordpress
- * Text Domain:       admin_schemes
+ * Text Domain:       dracula-wordpress-textdomain
  * License:           MIT License
  * License URI:       https://github.com/dracula/wordpress/blob/master/LICENSE
  * Update URI:        https://github.com/dracula/wordpress/releases
  */
 
-if ( ! class_exists( 'Custom_Color_Schemes' ) ) {
-	require_once __DIR__ . '/dracula-custom-admin-color-schemes/custom-admin-color-schemes.php';
+if ( ! class_exists( 'Dracula_WordPress_Custom_Color_Schemes' ) ) {
+	require_once __DIR__ . '/dracula-custom-admin-color-schemes/class-dracula-wordpress-custom-color-schemes.php';
 	global $acs_colors;
 	$acs_colors = new Dracula_WordPress_Custom_Color_Schemes();
 }

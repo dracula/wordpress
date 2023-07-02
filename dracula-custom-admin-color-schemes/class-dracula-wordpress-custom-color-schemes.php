@@ -11,10 +11,6 @@
  * it also does some basic checks
  */
 class Dracula_WordPress_Custom_Color_Schemes {
-
-
-
-
 	/**
 	 * Our color scheme reference name
 	 *
@@ -28,7 +24,7 @@ class Dracula_WordPress_Custom_Color_Schemes {
 	 * Constructor function that calls add actions
 	 */
 	public function __construct() {
-		 add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css' ) );
 
 		add_action( 'admin_init', array( $this, 'add_colors' ) );
 	}
@@ -41,7 +37,7 @@ class Dracula_WordPress_Custom_Color_Schemes {
 
 		wp_admin_css_color(
 			'smackdown',
-			__( 'Dracula', 'admin_schemes' ),
+			__( 'Dracula', 'dracula-wordpress-textdomain' ),
 			plugins_url( 'smackdown/colors' . $suffix . '.css', __FILE__ ),
 			array( '#282a36', '#44475a', '#8be9fd', '#f8f8f2' ),
 			array(
