@@ -46,7 +46,11 @@ jobs:
               'phpcs.xml',
             ];
 
-            const dirsToRemove = [];
+            const dirsToRemove = [
+                '.husky',
+                '.github',
+                'vendor'
+            ];
 
             filesToRemove.forEach(file => {
               if (fs.existsSync(file)) {
