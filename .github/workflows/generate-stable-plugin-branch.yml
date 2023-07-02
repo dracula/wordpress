@@ -28,9 +28,6 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install
 
-      - name: Build
-        run: npm run build
-
       - name: Remove development files
         uses: actions/github-script@v5
         with:
