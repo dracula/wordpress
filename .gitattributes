@@ -1,11 +1,8 @@
-/.husky,
-/.github,
-/vendor,
-.gitignore,
-composer.json,
-composer.lock,
-INSTALL.md,
-LICENSE,
-package-lock.json,
-package.json,
-phpcs.xml,
+/.husky             export-ignore
+/.git*              export-ignore
+/vendor             export-ignore
+/composer.*         export-ignore
+/INSTALL.md         export-ignore
+/LICENSE            export-ignore
+/package*.json      export-ignore
+/phpcs.xml          export-ignore
