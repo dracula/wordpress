@@ -1,6 +1,6 @@
 {
   "name": "dracula-wordpress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> A dark theme for [WordPress](https://wordpress.org/).",
   "main": "index.js",
   "scripts": {
