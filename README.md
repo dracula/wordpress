@@ -12,9 +12,10 @@ All instructions can be found at [draculatheme.com/wordpress](https://draculathe
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/wordpress/graphs/contributors).
 
-| [![oguhpereira](https://avatars3.githubusercontent.com/u/24482087?s=70&v=3)](https://github.com/oguhpereira) |
-| ------------------------------------------------------------------------------------------------------------ |
-| [Gustavo Pereira](https://github.com/oguhpereira)                                                            |
+[![oguhpereira](https://avatars3.githubusercontent.com/u/24482087?v=4&s=70)](https://github.com/oguhpereira)
+[![rdelbem](https://avatars.githubusercontent.com/u/5652782?v=4&s=70)](https://github.com/rdelbem)
+[![AurelienLourot](https://avatars.githubusercontent.com/u/11795312?v=4&s=70)](https://github.com/AurelienLourot)
+[![zenorocha](https://avatars.githubusercontent.com/u/398893?v=4&s=70)](https://github.com/zenorocha)
 
 ## Community
 

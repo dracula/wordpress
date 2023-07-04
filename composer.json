@@ -2,7 +2,7 @@
   "name": "dracula/dracula-wordpress",
   "description": "A WordPress plugin that brings Dracula color schema to WP dashboard",
   "type": "wordpress-plugin",
-  "license": "MIT license",
+  "license": "MIT",
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7",
     "wp-coding-standards/wpcs": "^2.3",
